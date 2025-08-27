@@ -52,6 +52,16 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				/* Industrial Design System Colors */
+				industrial: {
+					dark: 'hsl(var(--industrial-dark))',
+					darker: 'hsl(var(--industrial-darker))'
+				},
+				construction: {
+					orange: 'hsl(var(--construction-orange))'
+				},
+				steel: 'hsl(var(--steel-gray))',
+				concrete: 'hsl(var(--concrete-gray))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
