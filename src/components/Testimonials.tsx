@@ -1,18 +1,33 @@
 const testimonials = [
   {
-    quote: "Working with J.R. Vinagro on Ashlar Park Quincy Project has been a great experience! The planning that went into material deliveries, manpower/equipment movement, and site accessibility for other trades was second to none. We look forward to closing this project out strong with the team and partnering up with J.R. Vinagro on future projects.",
-    author: "Robert Solon",
-    company: "Dellbrook | JKS"
+    quote: "Garcia & Peña completely transformed our kitchen! They were professional, on time, and the attention to detail was incredible. The craftsmanship exceeded our expectations.",
+    author: "Sarah & Michael Chen",
+    company: "Providence, RI"
   },
   {
-    quote: "In my experience at the Worcester VA project at UMASS Medical School, J.R. Vinagro was an excellent contractor and partner. They worked collaboratively with other trades, bringing solutions to the table that saved time and money. Design, schedule, and scope changes from the design team/client were embraced and addressed quickly.",
-    author: "David Mollicone", 
-    company: "Suffolk"
+    quote: "Outstanding work on our master bathroom renovation. The team was clean, respectful, and delivered exactly what they promised. Highly recommend!",
+    author: "James Martinez", 
+    company: "Cranston, RI"
   },
   {
-    quote: "J.R. Vinagro was an exceptional partner on the successful site development project in North Kingstown, RI. Their expertise in material handling and rock crushing allowed all of the blasted rock on the site to be utilized for pavement base, crushed stone, and stone fill. J.R. Vinagro provided valuable input, which ultimately saved the client money and maintained schedule.",
-    author: "James Walton",
-    company: "Dennis Group"
+    quote: "They handled our restaurant build-out with exceptional professionalism. The project was completed ahead of schedule and within budget. Amazing work!",
+    author: "Restaurant Owner",
+    company: "Fall River, MA"
+  },
+  {
+    quote: "From design to completion, Garcia & Peña made our home addition seamless. Their team was skilled, reliable, and delivered exactly what we envisioned.",
+    author: "The Johnson Family",
+    company: "Warwick, RI"
+  },
+  {
+    quote: "Exceptional quality and transparent communication throughout our office renovation. They worked around our business hours to minimize disruption.",
+    author: "Tech Startup CEO",
+    company: "Providence, RI"
+  },
+  {
+    quote: "The custom millwork and attention to detail in our historic home renovation was remarkable. They preserved the character while adding modern functionality.",
+    author: "Historic Homeowner",
+    company: "Newport, RI"
   }
 ];
 

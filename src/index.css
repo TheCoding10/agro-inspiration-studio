@@ -18,7 +18,7 @@ All colors MUST be HSL.
     --popover-foreground: 222.2 84% 4.9%;
 
     /* J.R. Vinagro Brand Colors */
-    --primary: 0 100% 50%;  /* Bright Red */
+    --primary: 25 95% 53%;  /* Orange - Garcia & Peña brand color */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 22% 22%;  /* Dark Navy */
@@ -27,7 +27,7 @@ All colors MUST be HSL.
     --muted: 220 13% 91%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 0 100% 50%;  /* Red accent */
+    --accent: 25 95% 53%;  /* Orange accent */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -35,7 +35,7 @@ All colors MUST be HSL.
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 0 100% 50%;
+    --ring: 25 95% 53%;
 
     /* Industrial Design Tokens */
     --industrial-dark: 220 25% 15%;
@@ -74,7 +74,7 @@ All colors MUST be HSL.
     --popover-foreground: 0 0% 100%;
 
     /* Keep same brand colors in dark mode */
-    --primary: 0 100% 50%;
+    --primary: 25 95% 53%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 25% 15%;
@@ -83,7 +83,7 @@ All colors MUST be HSL.
     --muted: 220 25% 15%;
     --muted-foreground: 220 8% 65%;
 
-    --accent: 0 100% 50%;
+    --accent: 25 95% 53%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
@@ -91,7 +91,7 @@ All colors MUST be HSL.
 
     --border: 220 25% 25%;
     --input: 220 25% 25%;
-    --ring: 0 100% 50%;
+    --ring: 25 95% 53%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

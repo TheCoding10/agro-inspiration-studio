@@ -6,16 +6,16 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="bg-primary text-primary-foreground px-3 py-2 font-bold text-xl mb-6 inline-block">
-              J.R. VINAGRO
+              GARCIA & PEÑA
             </div>
             <p className="text-gray-300 leading-relaxed mb-6">
-              A full-service contractor serving the Northeast with turnkey demolition, 
-              recycling and sitework services on commercial, industrial, and public projects.
+              Your trusted partner for premium general contracting services in Rhode Island & Massachusetts.
+              Expert kitchen & bath renovations, home additions, and commercial build-outs.
             </p>
             <div className="space-y-2 text-gray-300">
-              <p>📧 info@jrvinagro.com</p>
-              <p>📞 (555) 123-4567</p>
-              <p>📍 123 Industrial Way, Providence, RI</p>
+              <p>📧 hello@gpcontracting.com</p>
+              <p>📞 (401) 000-0000</p>
+              <p>📍 Providence, Warwick, Cranston, Fall River & surrounding areas</p>
             </div>
           </div>
 
@@ -23,12 +23,12 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-6">Services</h3>
             <ul className="space-y-3 text-gray-300">
-              <li><a href="#" className="hover:text-primary transition-colors">Site Development</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Demolition & Abatement</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Land Clearing</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Crushing</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">C&D Recycling</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Material Sales</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Kitchen Remodeling</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Bathroom Renovations</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Home Additions</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Commercial Build-Outs</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Custom Carpentry</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Design Consultation</a></li>
             </ul>
           </div>
 
@@ -37,10 +37,10 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-6">Company</h3>
             <ul className="space-y-3 text-gray-300">
               <li><a href="#" className="hover:text-primary transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Projects</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Careers</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Portfolio</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Testimonials</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Contact</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Pay Your Bill</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Free Quote</a></li>
             </ul>
           </div>
         </div>
@@ -48,7 +48,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 J.R. Vinagro. All rights reserved. | Built with excellence in construction.
+            © 2024 Garcia & Peña General Contracting. All rights reserved. | Licensed & Insured in RI & MA
           </p>
         </div>
       </div>

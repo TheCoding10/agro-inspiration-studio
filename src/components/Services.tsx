@@ -9,35 +9,25 @@ import materialSalesImage from "@/assets/material-sales.jpg";
 
 const services = [
   {
-    title: "Site Development",
-    description: "Our site development division delivers heavy civil, energy, and utility projects of the highest quality for both public and private clients.",
+    title: "Kitchen Remodeling",
+    description: "Custom cabinetry, premium countertops, and complete kitchen transformations with expert craftsmanship.",
     image: siteDevelopmentImage,
   },
   {
-    title: "Demolition & Abatement",
-    description: "Our experienced Demolition and Asbestos Abatement teams are fully trained and certified to contain and address hazardous environments prior to removal.",
+    title: "Bathroom Renovations",
+    description: "Luxury spa-like bathrooms with precision tile work, custom fixtures, and waterproofing expertise.",
     image: demolitionImage,
   },
   {
-    title: "Land Clearing",
-    description: "We offer land clearing services including brush and stump removal, rock breaking and more, while accounting for underground utilities, overhead wires, and erosion control.",
+    title: "Home Additions",
+    description: "Seamless room additions, second stories, and structural expansions that blend with your home.",
     image: landClearingImage,
   },
   {
-    title: "Crushing",
-    description: "Our crushing operations utilize more than 40 pieces of specialized equipment to process aggregate, road gravel, asphalt and concrete materials, and more.",
+    title: "Commercial Build-Outs",
+    description: "Professional restaurant, office, and retail spaces delivered on time and within budget.",
     image: crushingImage,
-  },
-  {
-    title: "C&D Recycling",
-    description: "Our state-of-the-art C&D processing facility is equipped to receive residential and commercial debris for recycling and repurposing, helping preserve our environment.",
-    image: recyclingImage,
-  },
-  {
-    title: "Material Sales",
-    description: "We offer high-quality stone and aggregate products for sale, as well as recycled asphalt products (RAP), sand, and seasonal products including road salt.",
-    image: materialSalesImage,
-  },
+  }
 ];
 
 const Services = () => {
@@ -47,10 +37,10 @@ const Services = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Providing Contracting & Sustainability Services
+            Premium General Contracting Services
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-            Our combined services cover every stage of project delivery, from demolition to development. We engineer value by recycling and disposing of materials to reduce costs and streamline production.
+            Transform your space with expert kitchen & bath renovations, seamless additions, and professional commercial build-outs. Over 15 years of excellence in Rhode Island & Massachusetts.
           </p>
           <Button 
             variant="outline" 
@@ -62,7 +52,7 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <Card key={index} className="group overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="relative overflow-hidden">

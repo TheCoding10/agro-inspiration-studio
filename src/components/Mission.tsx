@@ -22,16 +22,18 @@ const Mission = () => {
           </div>
 
           <h2 className="text-4xl md:text-6xl font-bold mb-8">
-            Overcoming the Impossible
+            Excellence in Every Project
           </h2>
           
           <div className="space-y-6 text-xl text-gray-300 leading-relaxed mb-12">
             <p>
-              At J.R. Vinagro, we see things differently. What others deem impossible, we consider a challenge. 
-              And there's nothing we love more than a challenge.
+              Welcome to Garcia & Peña General Contracting! We've been serving Rhode Island and Massachusetts 
+              with premium construction services for over 15 years, transforming homes and businesses with 
+              unmatched craftsmanship and professional integrity.
             </p>
             <p>
-              We've built our reputation on finding innovative solutions to obstacles that stand in the way of a project's success.
+              What started as a passion for quality construction has grown into a full-service contracting business 
+              that helps property owners achieve their vision through expert renovation and construction services.
             </p>
           </div>
 

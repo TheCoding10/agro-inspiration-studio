@@ -7,7 +7,7 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center space-x-3">
           <div className="bg-primary text-primary-foreground px-3 py-2 font-bold text-xl">
-            J.R. VINAGRO
+            GARCIA & PEÑA
           </div>
         </div>
 
@@ -19,18 +19,18 @@ const Header = () => {
           <a href="#services" className="text-secondary-foreground hover:text-primary transition-colors font-medium">
             SERVICES
           </a>
-          <a href="#projects" className="text-secondary-foreground hover:text-primary transition-colors font-medium">
-            PROJECTS
+          <a href="#portfolio" className="text-secondary-foreground hover:text-primary transition-colors font-medium">
+            PORTFOLIO
           </a>
-          <a href="#careers" className="text-secondary-foreground hover:text-primary transition-colors font-medium">
-            CAREERS
+          <a href="#testimonials" className="text-secondary-foreground hover:text-primary transition-colors font-medium">
+            TESTIMONIALS
           </a>
         </nav>
 
         {/* Action Buttons */}
         <div className="flex items-center space-x-4">
           <Button variant="outline" className="hidden md:block border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary">
-            PAY YOUR BILL
+            GET FREE QUOTE
           </Button>
           <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold">
             CONTACT
