@@ -1,4 +1,13 @@
 import { Button } from "@/components/ui/button";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -12,20 +21,119 @@ const Header = () => {
         </div>
 
         {/* Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
-          <a href="#about" className="text-secondary-foreground hover:text-primary transition-colors font-medium">
-            ABOUT
-          </a>
-          <a href="#services" className="text-secondary-foreground hover:text-primary transition-colors font-medium">
-            SERVICES
-          </a>
-          <a href="#portfolio" className="text-secondary-foreground hover:text-primary transition-colors font-medium">
-            PORTFOLIO
-          </a>
-          <a href="#testimonials" className="text-secondary-foreground hover:text-primary transition-colors font-medium">
-            TESTIMONIALS
-          </a>
-        </nav>
+        <NavigationMenu className="hidden md:flex">
+          <NavigationMenuList>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger className="text-secondary-foreground hover:text-primary transition-colors font-medium bg-transparent">
+                ABOUT
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <div className="grid w-48 gap-3 p-4 bg-background border">
+                  <NavigationMenuLink asChild>
+                    <Link to="/about/overview" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">OVERVIEW</div>
+                    </Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link to="/about/safety" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">SAFETY</div>
+                    </Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link to="/about/history" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">HISTORY</div>
+                    </Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link to="/about/why-choose-us" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">WHY CHOOSE US</div>
+                    </Link>
+                  </NavigationMenuLink>
+                </div>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            
+            <NavigationMenuItem>
+              <NavigationMenuTrigger className="text-secondary-foreground hover:text-primary transition-colors font-medium bg-transparent">
+                SERVICES
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <div className="grid w-48 gap-3 p-4 bg-background border">
+                  <NavigationMenuLink asChild>
+                    <Link to="/services/site-development" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">SITE DEVELOPMENT</div>
+                    </Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link to="/services/demolition" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">DEMOLITION</div>
+                    </Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link to="/services/land-clearing" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">LAND CLEARING</div>
+                    </Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link to="/services/crushing" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">CRUSHING</div>
+                    </Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link to="/services/recycling" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">RECYCLING</div>
+                    </Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link to="/services/material-sales" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">MATERIAL SALES</div>
+                    </Link>
+                  </NavigationMenuLink>
+                </div>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            
+            <NavigationMenuItem>
+              <NavigationMenuTrigger className="text-secondary-foreground hover:text-primary transition-colors font-medium bg-transparent">
+                PORTFOLIO
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <div className="grid w-48 gap-3 p-4 bg-background border">
+                  <NavigationMenuLink asChild>
+                    <Link to="/portfolio/projects" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">PROJECTS</div>
+                    </Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link to="/portfolio/gallery" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">GALLERY</div>
+                    </Link>
+                  </NavigationMenuLink>
+                </div>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            
+            <NavigationMenuItem>
+              <NavigationMenuTrigger className="text-secondary-foreground hover:text-primary transition-colors font-medium bg-transparent">
+                TESTIMONIALS
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <div className="grid w-48 gap-3 p-4 bg-background border">
+                  <NavigationMenuLink asChild>
+                    <Link to="/testimonials/client-reviews" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">CLIENT REVIEWS</div>
+                    </Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link to="/testimonials/case-studies" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">CASE STUDIES</div>
+                    </Link>
+                  </NavigationMenuLink>
+                </div>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
 
         {/* Action Buttons */}
         <div className="flex items-center space-x-4">
