@@ -1,25 +1,41 @@
 name: Deploy Vite site to GitHub Pages
-on: { push: { branches: [ main ] } }
-permissions: { contents: read, pages: write, id-token: write }
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: 18 }
-      - name: Install
+        with:
+          node-version: 18
+      - name: Install deps
         run: |
           if [ -f package-lock.json ]; then npm ci; else npm install; fi
-      - run: npm run build
-      - name: SPA fallback
+      - name: Build
+        run: npm run build
+      - name: SPA fallback (react-router)
         run: cp dist/index.html dist/404.html
-      - uses: actions/upload-pages-artifact@v3
-        with: { path: ./dist }
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    environment: { name: github-pages }
+    environment:
+      name: github-pages
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
