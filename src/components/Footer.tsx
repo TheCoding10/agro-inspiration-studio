@@ -14,7 +14,7 @@ const Footer = () => {
             </p>
             <div className="space-y-2 text-gray-300">
               <p>📧 hello@gpcontracting.com</p>
-              <p>📞 (401) 000-0000</p>
+              <p>📞 (774) 329-4239</p>
               <p>📍 Providence, Warwick, Cranston, Fall River & surrounding areas</p>
             </div>
           </div>

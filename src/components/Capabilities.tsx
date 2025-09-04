@@ -12,7 +12,7 @@ const Capabilities = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="text-center">
               <div className="text-6xl md:text-7xl font-bold text-primary mb-4">
                 100+
@@ -24,28 +24,10 @@ const Capabilities = () => {
             
             <div className="text-center">
               <div className="text-6xl md:text-7xl font-bold text-primary mb-4">
-                15+
-              </div>
-              <div className="text-2xl font-semibold text-gray-300">
-                Years Experience
-              </div>
-            </div>
-            
-            <div className="text-center">
-              <div className="text-6xl md:text-7xl font-bold text-primary mb-4">
                 98%
               </div>
               <div className="text-2xl font-semibold text-gray-300">
                 Client Satisfaction
-              </div>
-            </div>
-            
-            <div className="text-center">
-              <div className="text-6xl md:text-7xl font-bold text-primary mb-4">
-                $100K+
-              </div>
-              <div className="text-2xl font-semibold text-gray-300">
-                Projects Value
               </div>
             </div>
         </div>

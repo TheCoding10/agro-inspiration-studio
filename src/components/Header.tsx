@@ -60,6 +60,26 @@ const Header = () => {
               <NavigationMenuContent>
                 <div className="grid w-48 gap-3 p-4 bg-background border">
                   <NavigationMenuLink asChild>
+                    <Link to="/services/kitchen-remodeling" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">KITCHEN REMODELING</div>
+                    </Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link to="/services/bathroom-renovation" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">BATHROOM RENOVATION</div>
+                    </Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link to="/services/home-additions" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">HOME ADDITIONS</div>
+                    </Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link to="/services/commercial-buildouts" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">COMMERCIAL BUILD-OUTS</div>
+                    </Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
                     <Link to="/services/site-development" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
                       <div className="text-sm font-medium leading-none">SITE DEVELOPMENT</div>
                     </Link>
@@ -67,26 +87,6 @@ const Header = () => {
                   <NavigationMenuLink asChild>
                     <Link to="/services/demolition" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
                       <div className="text-sm font-medium leading-none">DEMOLITION</div>
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link to="/services/land-clearing" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">LAND CLEARING</div>
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link to="/services/crushing" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">CRUSHING</div>
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link to="/services/recycling" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">RECYCLING</div>
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link to="/services/material-sales" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">MATERIAL SALES</div>
                     </Link>
                   </NavigationMenuLink>
                 </div>

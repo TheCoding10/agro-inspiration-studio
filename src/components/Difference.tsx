@@ -21,7 +21,7 @@ const Difference = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            The J.R. Vinagro Difference
+            Garcia & Pena General Contracting Difference
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
             We excel at delivering creative, sustainable project solutions using the latest heavy machinery and technology. 
