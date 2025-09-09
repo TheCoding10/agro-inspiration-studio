@@ -14,17 +14,17 @@ const WhyChooseUs = () => {
               <section className="mb-12">
                 <h2 className="text-2xl font-semibold text-primary mb-6">The Garcia & Peña Advantage</h2>
                 <p className="text-muted-foreground mb-6">
-                  When you choose Garcia & Peña, you're partnering with a team that brings over two decades 
-                  of experience, cutting-edge technology, and an unwavering commitment to excellence.
+                  When you choose Garcia & Peña, you're partnering with a team that brings 
+                  cutting-edge technology, and an unwavering commitment to excellence.
                 </p>
               </section>
 
               <div className="grid md:grid-cols-2 gap-8 mb-12">
                 <div className="p-6 bg-card rounded-lg shadow-lg">
-                  <h3 className="text-xl font-semibold text-primary mb-4">Experience & Expertise</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-4">Expertise & Quality</h3>
                   <ul className="space-y-2 text-muted-foreground">
-                    <li>• 24+ years in construction and excavation</li>
-                    <li>• 1,000+ successful projects completed</li>
+                    <li>• Professional construction and excavation services</li>
+                    <li>• Successful projects completed across New England</li>
                     <li>• Certified professionals and operators</li>
                     <li>• Expertise across multiple industries</li>
                   </ul>
@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
                 <div className="p-6 bg-card rounded-lg shadow-lg">
                   <h3 className="text-xl font-semibold text-primary mb-4">Safety Excellence</h3>
                   <ul className="space-y-2 text-muted-foreground">
-                    <li>• Zero lost-time incidents (past 2 years)</li>
+                    <li>• Outstanding safety record</li>
                     <li>• Comprehensive safety training programs</li>
                     <li>• Industry-leading safety protocols</li>
                     <li>• Regular equipment inspections</li>

@@ -40,7 +40,7 @@ const Services = () => {
             Premium General Contracting Services
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
-            Transform your space with expert kitchen & bath renovations, seamless additions, and professional commercial build-outs. Over 15 years of excellence in Rhode Island & Massachusetts.
+            Transform your space with expert kitchen & bath renovations, seamless additions, and professional commercial build-outs. Excellence in Rhode Island & Massachusetts.
           </p>
           <Button 
             variant="outline" 

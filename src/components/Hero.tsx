@@ -27,7 +27,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-gray-200 leading-relaxed max-w-3xl mx-auto">
-            Transform your space with expert kitchen & bath renovations, seamless additions, and professional commercial build-outs. Over 15 years of excellence in Rhode Island & Massachusetts.
+            Transform your space with expert kitchen & bath renovations, seamless additions, and professional commercial build-outs. Excellence in Rhode Island & Massachusetts.
           </p>
 
           <Button 

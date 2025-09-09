@@ -27,8 +27,8 @@ const Mission = () => {
           
           <div className="space-y-6 text-xl text-gray-300 leading-relaxed mb-12">
             <p>
-              Welcome to Garcia & Peña General Contracting! We've been serving Rhode Island and Massachusetts 
-              with premium construction services for over 15 years, transforming homes and businesses with 
+              Welcome to Garcia & Peña General Contracting! We serve Rhode Island and Massachusetts 
+              with premium construction services, transforming homes and businesses with 
               unmatched craftsmanship and professional integrity.
             </p>
             <p>

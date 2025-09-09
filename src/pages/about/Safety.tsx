@@ -29,7 +29,7 @@ const Safety = () => {
                   <div className="text-center p-6 bg-muted rounded-lg">
                     <div className="text-3xl font-bold text-primary mb-2">0</div>
                     <div className="text-muted-foreground">Lost Time Incidents</div>
-                    <div className="text-sm text-muted-foreground">Last 2 years</div>
+                    <div className="text-sm text-muted-foreground">Outstanding Record</div>
                   </div>
                   <div className="text-center p-6 bg-muted rounded-lg">
                     <div className="text-3xl font-bold text-primary mb-2">100%</div>

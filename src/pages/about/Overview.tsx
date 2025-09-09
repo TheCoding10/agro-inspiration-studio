@@ -14,8 +14,8 @@ const Overview = () => {
               <section className="mb-12">
                 <h2 className="text-2xl font-semibold text-primary mb-6">About Garcia & Peña</h2>
                 <p className="text-muted-foreground mb-6">
-                  Garcia & Peña is a leading construction and excavation company with over two decades of experience 
-                  in delivering exceptional results across various industries. Founded on principles of integrity, 
+                  Garcia & Peña is a leading construction and excavation company 
+                  delivering exceptional results across various industries. Founded on principles of integrity,
                   quality, and reliability, we have built a reputation as one of the most trusted contractors in the region.
                 </p>
                 <p className="text-muted-foreground mb-6">

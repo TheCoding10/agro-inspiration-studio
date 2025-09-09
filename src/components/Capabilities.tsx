@@ -7,7 +7,7 @@ const Capabilities = () => {
             Our Proven Track Record
           </h2>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto">
-            Over 15 years of excellence in Rhode Island & Massachusetts, delivering premium construction services
+            Rhode Island & Massachusetts premier construction services
             with unmatched craftsmanship and professional integrity.
           </p>
         </div>
@@ -17,7 +17,7 @@ const Capabilities = () => {
             15+
           </div>
           <div className="text-2xl font-semibold text-gray-300">
-            Years Experience
+            Client Satisfaction
           </div>
         </div>
       </div>
