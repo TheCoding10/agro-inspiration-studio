@@ -50,11 +50,6 @@ const Header = () => {
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link to="/about/history" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">HISTORY</div>
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
                     <Link to="/about/why-choose-us" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
                       <div className="text-sm font-medium leading-none">WHY CHOOSE US</div>
                     </Link>
@@ -134,11 +129,6 @@ const Header = () => {
                       <div className="text-sm font-medium leading-none">CLIENT REVIEWS</div>
                     </Link>
                   </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link to="/testimonials/case-studies" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">CASE STUDIES</div>
-                    </Link>
-                  </NavigationMenuLink>
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -174,9 +164,6 @@ const Header = () => {
                     </Link>
                     <Link to="/about/safety" className="block py-2 text-sm hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
                       SAFETY
-                    </Link>
-                    <Link to="/about/history" className="block py-2 text-sm hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
-                      HISTORY
                     </Link>
                     <Link to="/about/why-choose-us" className="block py-2 text-sm hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
                       WHY CHOOSE US
@@ -234,9 +221,6 @@ const Header = () => {
                   <CollapsibleContent className="space-y-2 pl-4">
                     <Link to="/testimonials/client-reviews" className="block py-2 text-sm hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
                       CLIENT REVIEWS
-                    </Link>
-                    <Link to="/testimonials/case-studies" className="block py-2 text-sm hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
-                      CASE STUDIES
                     </Link>
                   </CollapsibleContent>
                 </Collapsible>

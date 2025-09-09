@@ -7,7 +7,6 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Overview from "./pages/about/Overview";
 import Safety from "./pages/about/Safety";
-import History from "./pages/about/History";
 import WhyChooseUs from "./pages/about/WhyChooseUs";
 import SiteDevelopment from "./pages/services/SiteDevelopment";
 import Demolition from "./pages/services/Demolition";
@@ -31,7 +30,6 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about/overview" element={<Overview />} />
           <Route path="/about/safety" element={<Safety />} />
-          <Route path="/about/history" element={<History />} />
           <Route path="/about/why-choose-us" element={<WhyChooseUs />} />
           <Route path="/services/site-development" element={<SiteDevelopment />} />
           <Route path="/services/demolition" element={<Demolition />} />
