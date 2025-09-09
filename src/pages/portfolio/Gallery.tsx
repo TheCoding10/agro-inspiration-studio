@@ -11,33 +11,33 @@ const Gallery = () => {
   const galleryImages = [
     {
       src: siteDevelopmentImg,
-      alt: "Site Development Project",
-      caption: "Commercial site development with precision grading"
+      alt: "Kitchen Renovation Project",
+      caption: "Modern kitchen remodel with custom cabinetry and granite countertops"
     },
     {
       src: demolitionImg,
-      alt: "Demolition Work",
-      caption: "Safe demolition of industrial facility"
+      alt: "Bathroom Renovation",
+      caption: "Complete bathroom renovation with luxury fixtures and tiling"
     },
     {
       src: landClearingImg,
-      alt: "Land Clearing",
-      caption: "Environmentally conscious land clearing"
+      alt: "Home Addition",
+      caption: "Beautiful home addition expanding living space"
     },
     {
       src: crushingImg,
-      alt: "Material Crushing",
-      caption: "On-site material crushing and processing"
+      alt: "Commercial Buildout",
+      caption: "Professional commercial space buildout and renovation"
     },
     {
       src: recyclingImg,
-      alt: "Material Recycling",
-      caption: "Sustainable material recycling operations"
+      alt: "Custom Cabinetry",
+      caption: "Handcrafted custom cabinetry installation"
     },
     {
       src: materialSalesImg,
-      alt: "Material Sales",
-      caption: "Quality construction materials supply"
+      alt: "Flooring Installation",
+      caption: "Premium hardwood flooring installation"
     }
   ];
 

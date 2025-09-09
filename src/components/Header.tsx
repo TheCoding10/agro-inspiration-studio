@@ -15,9 +15,9 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-3">
-          <div className="bg-primary text-primary-foreground px-3 py-2 font-bold text-xl">
+          <Link to="/" className="bg-primary text-primary-foreground px-3 py-2 font-bold text-xl hover:bg-primary/90 transition-colors">
             GARCIA & PEÑA
-          </div>
+          </Link>
         </div>
 
         {/* Navigation */}
