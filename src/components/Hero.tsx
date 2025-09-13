@@ -30,12 +30,24 @@ const Hero = () => {
             Transform your space with expert kitchen & bath renovations, seamless additions, and professional commercial build-outs. Excellence in Rhode Island & Massachusetts.
           </p>
 
-          <Button 
-            size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105"
-          >
-            GET FREE QUOTE
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105"
+              onClick={() => window.location.href = '/contact'}
+            >
+              GET FREE QUOTE
+            </Button>
+            
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="border-2 border-white text-white hover:bg-white hover:text-primary font-bold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105"
+              onClick={() => window.location.href = 'tel:+17743294239'}
+            >
+              CALL NOW
+            </Button>
+          </div>
         </div>
       </div>
     </section>
