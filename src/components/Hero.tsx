@@ -45,7 +45,7 @@ const Hero = () => {
               className="border-2 border-white text-white hover:bg-white hover:text-primary font-bold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105"
               onClick={() => window.location.href = 'tel:+17743294239'}
             >
-              CALL NOW
+              CALL NOW: (774) 329-4239
             </Button>
           </div>
         </div>
