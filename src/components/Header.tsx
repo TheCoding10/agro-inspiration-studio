@@ -137,10 +137,16 @@ const Header = () => {
 
         {/* Action Buttons */}
         <div className="flex items-center space-x-4">
-          <Button variant="outline" className="hidden md:block border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary">
+          <Button 
+            className="hidden md:block bg-primary hover:bg-primary/90 text-primary-foreground font-bold"
+            onClick={() => window.location.href = '/contact'}
+          >
             GET FREE QUOTE
           </Button>
-          <Button className="hidden md:block bg-primary hover:bg-primary/90 text-primary-foreground font-bold">
+          <Button 
+            className="hidden md:block bg-primary hover:bg-primary/90 text-primary-foreground font-bold"
+            onClick={() => window.location.href = 'tel:+17743294239'}
+          >
             CONTACT
           </Button>
           
@@ -226,10 +232,16 @@ const Header = () => {
                 </Collapsible>
 
                 <div className="border-t pt-4 space-y-2">
-                  <Button variant="outline" className="w-full border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary">
+                  <Button 
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold"
+                    onClick={() => { window.location.href = '/contact'; setIsOpen(false); }}
+                  >
                     GET FREE QUOTE
                   </Button>
-                  <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold">
+                  <Button 
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold"
+                    onClick={() => { window.location.href = 'tel:+17743294239'; setIsOpen(false); }}
+                  >
                     CONTACT
                   </Button>
                 </div>
