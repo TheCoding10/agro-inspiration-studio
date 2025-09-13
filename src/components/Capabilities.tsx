@@ -14,7 +14,7 @@ const Capabilities = () => {
 
         <div className="text-center">
           <div className="text-6xl md:text-7xl font-bold text-primary mb-4">
-            15+
+            98%
           </div>
           <div className="text-2xl font-semibold text-gray-300">
             Client Satisfaction
