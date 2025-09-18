@@ -8,44 +8,60 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src={heroImage} 
-          alt="Construction equipment in action"
+          alt="Luxury kitchen renovation showcase"
           className="w-full h-full object-cover"
         />
-        {/* Dark overlay with blue tint */}
-        <div className="absolute inset-0 bg-gradient-to-r from-industrial-darker/80 via-industrial-dark/70 to-industrial-dark/60"></div>
+        {/* Sophisticated gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-luxury-navy/90 via-luxury-navy/75 to-luxury-charcoal/80"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            PREMIUM GENERAL
+        <div className="max-w-5xl mx-auto">
+          <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight text-white">
+            Transforming Spaces.
             <br />
-            CONTRACTING
-            <br />
-            SERVICES
+            <span className="text-secondary font-script text-6xl md:text-7xl lg:text-8xl">Exceeding Expectations.</span>
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 text-gray-200 leading-relaxed max-w-3xl mx-auto">
-            Transform your space with expert kitchen & bath renovations, seamless additions, and professional commercial build-outs. Excellence in Rhode Island & Massachusetts.
+          <p className="font-inter text-xl md:text-2xl mb-12 text-gray-200 leading-relaxed max-w-4xl mx-auto font-light">
+            Premium kitchen & bath renovations with uncompromising craftsmanship. 
+            Where vision meets expertise to create extraordinary spaces that inspire daily living.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105"
+              className="bg-secondary hover:bg-secondary/90 text-primary font-bold px-10 py-5 text-lg transition-all duration-500 transform hover:scale-105 hover:shadow-xl font-inter tracking-wide"
               onClick={() => window.location.href = '/contact'}
             >
-              GET FREE QUOTE
+              SCHEDULE DESIGN CONSULTATION
             </Button>
             
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105"
-              onClick={() => window.location.href = 'tel:+17743294239'}
+              variant="outline"
+              className="border-2 border-white/30 bg-white/10 hover:bg-white/20 text-white font-bold px-10 py-5 text-lg transition-all duration-500 transform hover:scale-105 backdrop-blur-sm font-inter tracking-wide"
+              onClick={() => window.location.href = '/portfolio/gallery'}
             >
-              CALL NOW
+              VIEW OUR PORTFOLIO
             </Button>
+          </div>
+
+          {/* Premium Trust Indicators */}
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div className="text-white/80">
+              <div className="text-3xl md:text-4xl font-bold text-secondary mb-2 font-playfair">15+</div>
+              <div className="text-sm font-inter uppercase tracking-wider">Years Experience</div>
+            </div>
+            <div className="text-white/80">
+              <div className="text-3xl md:text-4xl font-bold text-secondary mb-2 font-playfair">98%</div>
+              <div className="text-sm font-inter uppercase tracking-wider">Client Satisfaction</div>
+            </div>
+            <div className="text-white/80">
+              <div className="text-3xl md:text-4xl font-bold text-secondary mb-2 font-playfair">500+</div>
+              <div className="text-sm font-inter uppercase tracking-wider">Projects Completed</div>
+            </div>
           </div>
         </div>
       </div>

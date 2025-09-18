@@ -4,7 +4,7 @@ import Capabilities from "@/components/Capabilities";
 import Services from "@/components/Services";
 import Difference from "@/components/Difference";
 import Mission from "@/components/Mission";
-import Testimonials from "@/components/Testimonials";
+import PremiumTestimonials from "@/components/PremiumTestimonials";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -16,7 +16,7 @@ const Index = () => {
       <Services />
       <Difference />
       <Mission />
-      <Testimonials />
+      <PremiumTestimonials />
       <Footer />
     </div>
   );

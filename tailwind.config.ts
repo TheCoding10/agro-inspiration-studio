@@ -18,6 +18,11 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'inter': ['Inter', 'sans-serif'],
+				'script': ['Dancing Script', 'cursive'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -52,16 +57,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				/* Industrial Design System Colors */
-				industrial: {
-					dark: 'hsl(var(--industrial-dark))',
-					darker: 'hsl(var(--industrial-darker))'
+				/* Premium Garcia & Peña Design System */
+				luxury: {
+					navy: 'hsl(var(--luxury-navy))',
+					gold: 'hsl(var(--luxury-gold))',
+					copper: 'hsl(var(--elegant-copper))',
+					cream: 'hsl(var(--premium-cream))',
+					gray: 'hsl(var(--soft-gray))',
+					charcoal: 'hsl(var(--deep-charcoal))'
 				},
-				construction: {
-					orange: 'hsl(var(--construction-orange))'
-				},
-				steel: 'hsl(var(--steel-gray))',
-				concrete: 'hsl(var(--concrete-gray))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

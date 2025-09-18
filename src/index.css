@@ -8,41 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Premium Base Colors */
+    --background: 39 25% 97%;  /* Subtle cream background */
+    --foreground: 223 48% 21%;  /* Deep navy for text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 98%;  /* Clean white cards */
+    --card-foreground: 223 48% 21%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 223 48% 21%;
 
-    /* J.R. Vinagro Brand Colors */
-    --primary: 25 95% 53%;  /* Orange - Garcia & Peña brand color */
-    --primary-foreground: 0 0% 100%;
+    /* Garcia & Peña Premium Brand Colors */
+    --primary: 223 48% 21%;  /* Deep navy blue - sophisticated primary */
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 22% 22%;  /* Dark Navy */
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 47 69% 52%;  /* Warm gold - luxury accent */
+    --secondary-foreground: 223 48% 21%;
 
-    --muted: 220 13% 91%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 96%;  /* Soft gray */
+    --muted-foreground: 220 8% 46%;
 
-    --accent: 25 95% 53%;  /* Orange accent */
-    --accent-foreground: 0 0% 100%;
+    --accent: 30 56% 45%;  /* Elegant copper - CTAs and highlights */
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 25 95% 53%;
+    --border: 0 0% 90%;
+    --input: 0 0% 96%;
+    --ring: 47 69% 52%;  /* Gold ring focus */
 
-    /* Industrial Design Tokens */
-    --industrial-dark: 220 25% 15%;
-    --industrial-darker: 220 30% 8%;
-    --construction-orange: 25 100% 50%;
-    --steel-gray: 220 8% 46%;
-    --concrete-gray: 220 8% 95%;
+    /* Premium Design Tokens */
+    --luxury-navy: 223 48% 21%;
+    --luxury-gold: 47 69% 52%;
+    --elegant-copper: 30 56% 45%;
+    --premium-cream: 39 25% 97%;
+    --soft-gray: 0 0% 96%;
+    --deep-charcoal: 220 25% 15%;
+    
+    /* Gradient Definitions */
+    --gradient-luxury: linear-gradient(135deg, hsl(223 48% 21%) 0%, hsl(220 25% 15%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(47 69% 52%) 0%, hsl(45 100% 58%) 100%);
+    --gradient-copper: linear-gradient(135deg, hsl(30 56% 45%) 0%, hsl(25 65% 50%) 100%);
+    
+    /* Shadow Definitions */
+    --shadow-luxury: 0 20px 40px -10px hsl(223 48% 21% / 0.15);
+    --shadow-elegant: 0 10px 25px -5px hsl(223 48% 21% / 0.1);
+    --shadow-soft: 0 4px 12px -2px hsl(223 48% 21% / 0.08);
 
     --radius: 0.5rem;
 

@@ -21,12 +21,14 @@ const Header = () => {
   const [testimonialsOpen, setTestimonialsOpen] = useState(false);
 
   return (
-    <header className="bg-secondary py-4 px-6 shadow-lg">
+    <header className="bg-luxury-navy py-4 px-6 shadow-luxury backdrop-blur-sm border-b border-secondary/20">
       <div className="container mx-auto flex items-center justify-between">
-        {/* Logo */}
+        {/* Premium Logo */}
         <div className="flex items-center space-x-3">
-          <Link to="/" className="bg-primary text-primary-foreground px-3 py-2 font-bold text-xl hover:bg-primary/90 transition-colors">
-            GARCIA & PEÑA
+          <Link to="/" className="group transition-all duration-300">
+            <div className="bg-gradient-to-r from-secondary to-accent text-primary font-playfair px-4 py-3 font-bold text-2xl hover:shadow-lg transition-all duration-300 transform hover:scale-105 rounded-md">
+              Garcia & Peña
+            </div>
           </Link>
         </div>
 
@@ -138,13 +140,13 @@ const Header = () => {
         {/* Action Buttons */}
         <div className="flex items-center space-x-4">
           <Button 
-            className="hidden md:block bg-primary hover:bg-primary/90 text-primary-foreground font-bold"
+            className="hidden md:block bg-secondary hover:bg-secondary/90 text-primary font-bold font-inter transition-all duration-300 hover:shadow-lg"
             onClick={() => window.location.href = '/contact'}
           >
             GET FREE QUOTE
           </Button>
           <Button 
-            className="hidden md:block bg-primary hover:bg-primary/90 text-primary-foreground font-bold"
+            className="hidden md:block bg-accent hover:bg-accent/90 text-white font-bold font-inter transition-all duration-300 hover:shadow-lg"
             onClick={() => window.location.href = 'tel:+17743294239'}
           >
             CONTACT
@@ -233,13 +235,13 @@ const Header = () => {
 
                 <div className="border-t pt-4 space-y-2">
                   <Button 
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold"
+                    className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold font-inter"
                     onClick={() => { window.location.href = '/contact'; setIsOpen(false); }}
                   >
                     GET FREE QUOTE
                   </Button>
                   <Button 
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold"
+                    className="w-full bg-accent hover:bg-accent/90 text-white font-bold font-inter"
                     onClick={() => { window.location.href = 'tel:+17743294239'; setIsOpen(false); }}
                   >
                     CONTACT
