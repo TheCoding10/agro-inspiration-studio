@@ -40,20 +40,20 @@ const Header = () => {
                 ABOUT
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="grid w-48 gap-3 p-4 bg-background border">
+                <div className="grid w-48 gap-3 p-4 bg-luxury-cream border border-luxury-gold/20 shadow-lg z-50">
                   <NavigationMenuLink asChild>
-                    <Link to="/about/overview" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">OVERVIEW</div>
+                    <Link to="/about/overview" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/10 hover:text-luxury-navy">
+                      <div className="text-sm font-medium leading-none text-luxury-navy">OVERVIEW</div>
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link to="/about/safety" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">SAFETY</div>
+                    <Link to="/about/safety" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/10 hover:text-luxury-navy">
+                      <div className="text-sm font-medium leading-none text-luxury-navy">SAFETY</div>
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link to="/about/why-choose-us" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">WHY CHOOSE US</div>
+                    <Link to="/about/why-choose-us" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/10 hover:text-luxury-navy">
+                      <div className="text-sm font-medium leading-none text-luxury-navy">WHY CHOOSE US</div>
                     </Link>
                   </NavigationMenuLink>
                 </div>
@@ -65,35 +65,35 @@ const Header = () => {
                 SERVICES
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="grid w-48 gap-3 p-4 bg-background border">
+                <div className="grid w-48 gap-3 p-4 bg-luxury-cream border border-luxury-gold/20 shadow-lg z-50">
                   <NavigationMenuLink asChild>
-                    <Link to="/services/kitchen-remodeling" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">KITCHEN REMODELING</div>
+                    <Link to="/services/kitchen-remodeling" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/10 hover:text-luxury-navy">
+                      <div className="text-sm font-medium leading-none text-luxury-navy">KITCHEN REMODELING</div>
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link to="/services/bathroom-renovation" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">BATHROOM RENOVATION</div>
+                    <Link to="/services/bathroom-renovation" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/10 hover:text-luxury-navy">
+                      <div className="text-sm font-medium leading-none text-luxury-navy">BATHROOM RENOVATION</div>
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link to="/services/home-additions" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">HOME ADDITIONS</div>
+                    <Link to="/services/home-additions" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/10 hover:text-luxury-navy">
+                      <div className="text-sm font-medium leading-none text-luxury-navy">HOME ADDITIONS</div>
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link to="/services/commercial-buildouts" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">COMMERCIAL BUILD-OUTS</div>
+                    <Link to="/services/commercial-buildouts" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/10 hover:text-luxury-navy">
+                      <div className="text-sm font-medium leading-none text-luxury-navy">COMMERCIAL BUILD-OUTS</div>
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link to="/services/site-development" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">SITE DEVELOPMENT</div>
+                    <Link to="/services/site-development" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/10 hover:text-luxury-navy">
+                      <div className="text-sm font-medium leading-none text-luxury-navy">SITE DEVELOPMENT</div>
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link to="/services/demolition" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">DEMOLITION</div>
+                    <Link to="/services/demolition" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/10 hover:text-luxury-navy">
+                      <div className="text-sm font-medium leading-none text-luxury-navy">DEMOLITION</div>
                     </Link>
                   </NavigationMenuLink>
                 </div>
@@ -105,15 +105,15 @@ const Header = () => {
                 PORTFOLIO
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="grid w-48 gap-3 p-4 bg-background border">
+                <div className="grid w-48 gap-3 p-4 bg-luxury-cream border border-luxury-gold/20 shadow-lg z-50">
                   <NavigationMenuLink asChild>
-                    <Link to="/portfolio/projects" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">PROJECTS</div>
+                    <Link to="/portfolio/projects" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/10 hover:text-luxury-navy">
+                      <div className="text-sm font-medium leading-none text-luxury-navy">PROJECTS</div>
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link to="/portfolio/gallery" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">GALLERY</div>
+                    <Link to="/portfolio/gallery" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/10 hover:text-luxury-navy">
+                      <div className="text-sm font-medium leading-none text-luxury-navy">GALLERY</div>
                     </Link>
                   </NavigationMenuLink>
                 </div>
@@ -125,10 +125,10 @@ const Header = () => {
                 TESTIMONIALS
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="grid w-48 gap-3 p-4 bg-background border">
+                <div className="grid w-48 gap-3 p-4 bg-luxury-cream border border-luxury-gold/20 shadow-lg z-50">
                   <NavigationMenuLink asChild>
-                    <Link to="/testimonials/client-reviews" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">CLIENT REVIEWS</div>
+                    <Link to="/testimonials/client-reviews" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/10 hover:text-luxury-navy">
+                      <div className="text-sm font-medium leading-none text-luxury-navy">CLIENT REVIEWS</div>
                     </Link>
                   </NavigationMenuLink>
                 </div>
