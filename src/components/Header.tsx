@@ -1,19 +1,18 @@
 import { Button } from "@/components/ui/button";
 import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Menu, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
 const Header = () => {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -33,109 +32,87 @@ const Header = () => {
         </div>
 
         {/* Navigation */}
-        <NavigationMenu className="hidden md:flex">
-          <NavigationMenuList>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-secondary-foreground hover:text-primary transition-colors font-medium bg-transparent">
-                ABOUT
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <div className="grid w-48 gap-2 p-4">
-                  <NavigationMenuLink asChild>
-                    <Link to="/about/overview" className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/20 text-luxury-navy font-medium">
-                      OVERVIEW
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link to="/about/safety" className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/20 text-luxury-navy font-medium">
-                      SAFETY
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link to="/about/why-choose-us" className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/20 text-luxury-navy font-medium">
-                      WHY CHOOSE US
-                    </Link>
-                  </NavigationMenuLink>
-                </div>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-secondary-foreground hover:text-primary transition-colors font-medium bg-transparent">
-                SERVICES
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <div className="grid w-48 gap-2 p-4">
-                  <NavigationMenuLink asChild>
-                    <Link to="/services/kitchen-remodeling" className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/20 text-luxury-navy font-medium">
-                      KITCHEN REMODELING
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link to="/services/bathroom-renovation" className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/20 text-luxury-navy font-medium">
-                      BATHROOM RENOVATION
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link to="/services/home-additions" className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/20 text-luxury-navy font-medium">
-                      HOME ADDITIONS
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link to="/services/commercial-buildouts" className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/20 text-luxury-navy font-medium">
-                      COMMERCIAL BUILD-OUTS
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link to="/services/site-development" className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/20 text-luxury-navy font-medium">
-                      SITE DEVELOPMENT
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link to="/services/demolition" className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/20 text-luxury-navy font-medium">
-                      DEMOLITION
-                    </Link>
-                  </NavigationMenuLink>
-                </div>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-secondary-foreground hover:text-primary transition-colors font-medium bg-transparent">
-                PORTFOLIO
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <div className="grid w-48 gap-2 p-4">
-                  <NavigationMenuLink asChild>
-                    <Link to="/portfolio/projects" className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/20 text-luxury-navy font-medium">
-                      PROJECTS
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link to="/portfolio/gallery" className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/20 text-luxury-navy font-medium">
-                      GALLERY
-                    </Link>
-                  </NavigationMenuLink>
-                </div>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-secondary-foreground hover:text-primary transition-colors font-medium bg-transparent">
-                TESTIMONIALS
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <div className="grid w-48 gap-2 p-4">
-                  <NavigationMenuLink asChild>
-                    <Link to="/testimonials/client-reviews" className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-luxury-gold/20 text-luxury-navy font-medium">
-                      CLIENT REVIEWS
-                    </Link>
-                  </NavigationMenuLink>
-                </div>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
+        <nav className="hidden md:flex items-center gap-2">
+          {/* About Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" className="text-secondary hover:text-primary transition-colors font-medium font-inter">
+                ABOUT <ChevronDown className="ml-1 h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-56 bg-white border-2 border-luxury-gold shadow-xl">
+              <DropdownMenuItem onClick={() => navigate('/about/overview')} className="cursor-pointer hover:bg-luxury-gold/20 text-luxury-navy font-medium">
+                OVERVIEW
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => navigate('/about/safety')} className="cursor-pointer hover:bg-luxury-gold/20 text-luxury-navy font-medium">
+                SAFETY
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => navigate('/about/why-choose-us')} className="cursor-pointer hover:bg-luxury-gold/20 text-luxury-navy font-medium">
+                WHY CHOOSE US
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+          {/* Services Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" className="text-secondary hover:text-primary transition-colors font-medium font-inter">
+                SERVICES <ChevronDown className="ml-1 h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-56 bg-white border-2 border-luxury-gold shadow-xl">
+              <DropdownMenuItem onClick={() => navigate('/services/kitchen-remodeling')} className="cursor-pointer hover:bg-luxury-gold/20 text-luxury-navy font-medium">
+                KITCHEN REMODELING
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => navigate('/services/bathroom-renovation')} className="cursor-pointer hover:bg-luxury-gold/20 text-luxury-navy font-medium">
+                BATHROOM RENOVATION
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => navigate('/services/home-additions')} className="cursor-pointer hover:bg-luxury-gold/20 text-luxury-navy font-medium">
+                HOME ADDITIONS
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => navigate('/services/commercial-buildouts')} className="cursor-pointer hover:bg-luxury-gold/20 text-luxury-navy font-medium">
+                COMMERCIAL BUILD-OUTS
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => navigate('/services/site-development')} className="cursor-pointer hover:bg-luxury-gold/20 text-luxury-navy font-medium">
+                SITE DEVELOPMENT
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => navigate('/services/demolition')} className="cursor-pointer hover:bg-luxury-gold/20 text-luxury-navy font-medium">
+                DEMOLITION
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+          {/* Portfolio Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" className="text-secondary hover:text-primary transition-colors font-medium font-inter">
+                PORTFOLIO <ChevronDown className="ml-1 h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-56 bg-white border-2 border-luxury-gold shadow-xl">
+              <DropdownMenuItem onClick={() => navigate('/portfolio/projects')} className="cursor-pointer hover:bg-luxury-gold/20 text-luxury-navy font-medium">
+                PROJECTS
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => navigate('/portfolio/gallery')} className="cursor-pointer hover:bg-luxury-gold/20 text-luxury-navy font-medium">
+                GALLERY
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+          {/* Testimonials Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" className="text-secondary hover:text-primary transition-colors font-medium font-inter">
+                TESTIMONIALS <ChevronDown className="ml-1 h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-56 bg-white border-2 border-luxury-gold shadow-xl">
+              <DropdownMenuItem onClick={() => navigate('/testimonials/client-reviews')} className="cursor-pointer hover:bg-luxury-gold/20 text-luxury-navy font-medium">
+                CLIENT REVIEWS
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </nav>
 
         {/* Action Buttons */}
         <div className="flex items-center space-x-4">
