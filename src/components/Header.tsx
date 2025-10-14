@@ -123,7 +123,7 @@ const Header = () => {
             GET FREE QUOTE
           </Button>
           <Button 
-            className="hidden md:block bg-white hover:bg-white/90 text-luxury-navy font-bold font-inter transition-all duration-300 hover:shadow-lg border-2 border-secondary"
+            className="hidden md:block bg-white hover:bg-white/90 text-primary font-bold font-inter transition-all duration-300 hover:shadow-lg border-2 border-secondary"
             onClick={() => window.location.href = 'tel:+17743294239'}
           >
             📞 CALL NOW
@@ -218,7 +218,7 @@ const Header = () => {
                     GET FREE QUOTE
                   </Button>
                   <Button 
-                    className="w-full bg-white hover:bg-white/90 text-luxury-navy font-bold font-inter border-2 border-secondary"
+                    className="w-full bg-white hover:bg-white/90 text-primary font-bold font-inter border-2 border-secondary"
                     onClick={() => { window.location.href = 'tel:+17743294239'; setIsOpen(false); }}
                   >
                     📞 CALL NOW
