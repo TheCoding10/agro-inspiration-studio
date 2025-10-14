@@ -17,8 +17,8 @@ const Capabilities = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-          <div className="group">
+        <div className="flex justify-center">
+          <div className="group max-w-md">
             <div className="text-7xl md:text-8xl font-bold text-secondary mb-6 font-playfair transition-transform duration-500 group-hover:scale-110">
               98%
             </div>
@@ -27,30 +27,6 @@ const Capabilities = () => {
             </div>
             <div className="text-gray-400 font-inter">
               Exceeding expectations on every project
-            </div>
-          </div>
-
-          <div className="group">
-            <div className="text-7xl md:text-8xl font-bold text-secondary mb-6 font-playfair transition-transform duration-500 group-hover:scale-110">
-              15+
-            </div>
-            <div className="text-2xl font-semibold text-gray-300 mb-4 font-inter">
-              Years Experience
-            </div>
-            <div className="text-gray-400 font-inter">
-              Mastering our craft since 2008
-            </div>
-          </div>
-
-          <div className="group">
-            <div className="text-7xl md:text-8xl font-bold text-secondary mb-6 font-playfair transition-transform duration-500 group-hover:scale-110">
-              $2M+
-            </div>
-            <div className="text-2xl font-semibold text-gray-300 mb-4 font-inter">
-              Annual Projects
-            </div>
-            <div className="text-gray-400 font-inter">
-              Premium renovations delivered
             </div>
           </div>
         </div>
