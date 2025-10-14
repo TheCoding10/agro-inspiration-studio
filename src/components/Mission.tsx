@@ -12,12 +12,12 @@ const Mission = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Challenge Accepted Graphic */}
           <div className="mb-12">
-            <div className="inline-flex items-center space-x-4 bg-secondary/10 rounded-full px-8 py-4 border border-secondary/30">
-              <span className="text-2xl font-bold text-luxury-navy">CHALLENGE</span>
-              <div className="w-12 h-12 bg-luxury-navy rounded-full flex items-center justify-center">
-                <div className="w-0 h-0 border-l-4 border-r-4 border-b-4 border-l-transparent border-r-transparent border-b-white ml-1"></div>
+            <div className="inline-flex items-center space-x-4 bg-white/5 rounded-full px-8 py-4 border-2 border-secondary">
+              <span className="text-2xl font-bold text-secondary">CHALLENGE</span>
+              <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
+                <div className="w-0 h-0 border-l-4 border-r-4 border-b-4 border-l-transparent border-r-transparent border-b-luxury-navy ml-1"></div>
               </div>
-              <span className="text-2xl font-bold text-luxury-navy">ACCEPTED</span>
+              <span className="text-2xl font-bold text-secondary">ACCEPTED</span>
             </div>
           </div>
 

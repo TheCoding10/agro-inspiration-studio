@@ -123,10 +123,10 @@ const Header = () => {
             GET FREE QUOTE
           </Button>
           <Button 
-            className="hidden md:block bg-accent hover:bg-accent/90 text-white font-bold font-inter transition-all duration-300 hover:shadow-lg"
+            className="hidden md:block bg-white hover:bg-white/90 text-luxury-navy font-bold font-inter transition-all duration-300 hover:shadow-lg border-2 border-secondary"
             onClick={() => window.location.href = 'tel:+17743294239'}
           >
-            CONTACT
+            📞 CALL NOW
           </Button>
           
           {/* Mobile Menu */}
@@ -218,10 +218,10 @@ const Header = () => {
                     GET FREE QUOTE
                   </Button>
                   <Button 
-                    className="w-full bg-accent hover:bg-accent/90 text-white font-bold font-inter"
+                    className="w-full bg-white hover:bg-white/90 text-luxury-navy font-bold font-inter border-2 border-secondary"
                     onClick={() => { window.location.href = 'tel:+17743294239'; setIsOpen(false); }}
                   >
-                    CONTACT
+                    📞 CALL NOW
                   </Button>
                 </div>
               </div>
