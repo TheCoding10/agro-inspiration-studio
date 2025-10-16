@@ -18,15 +18,17 @@ const Capabilities = () => {
         </div>
 
         <div className="flex justify-center">
-          <div className="group max-w-md">
-            <div className="text-7xl md:text-8xl font-bold text-secondary mb-6 font-playfair transition-transform duration-500 group-hover:scale-110">
-              98%
-            </div>
-            <div className="text-2xl font-semibold text-gray-300 mb-4 font-inter">
-              Client Satisfaction
-            </div>
-            <div className="text-gray-400 font-inter">
-              Exceeding expectations on every project
+          <div className="group max-w-2xl mx-auto">
+            <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-12 md:p-16 border border-white/10 hover:border-secondary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary/20">
+              <div className="text-7xl md:text-9xl font-bold text-secondary mb-8 font-playfair transition-transform duration-500 group-hover:scale-105">
+                98%
+              </div>
+              <div className="text-3xl md:text-4xl font-semibold text-white mb-6 font-inter">
+                Client Satisfaction
+              </div>
+              <div className="text-xl text-gray-300 font-inter">
+                Exceeding expectations on every project
+              </div>
             </div>
           </div>
         </div>
