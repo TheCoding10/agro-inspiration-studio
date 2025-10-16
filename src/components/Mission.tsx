@@ -39,8 +39,7 @@ const Mission = () => {
 
           <Button 
             size="lg"
-            variant="outline"
-            className="border-white text-white hover:bg-white hover:text-luxury-navy font-bold px-8 py-4"
+            className="bg-white hover:bg-white/90 text-primary font-bold px-8 py-4 border-2 border-secondary"
           >
             About Us
           </Button>
