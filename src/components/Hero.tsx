@@ -47,22 +47,6 @@ const Hero = () => {
               VIEW OUR PORTFOLIO
             </Button>
           </div>
-
-          {/* Premium Trust Indicators */}
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div className="text-white/80">
-              <div className="text-3xl md:text-4xl font-bold text-secondary mb-2 font-playfair">15+</div>
-              <div className="text-sm font-inter uppercase tracking-wider">Years Experience</div>
-            </div>
-            <div className="text-white/80">
-              <div className="text-3xl md:text-4xl font-bold text-secondary mb-2 font-playfair">98%</div>
-              <div className="text-sm font-inter uppercase tracking-wider">Client Satisfaction</div>
-            </div>
-            <div className="text-white/80">
-              <div className="text-3xl md:text-4xl font-bold text-secondary mb-2 font-playfair">500+</div>
-              <div className="text-sm font-inter uppercase tracking-wider">Projects Completed</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
