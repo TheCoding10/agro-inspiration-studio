@@ -1,21 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import siteDevelopmentImage from "@/assets/site-development.jpg";
-import demolitionImage from "@/assets/demolition.jpg";
+import kitchenRenovationImage from "@/assets/kitchen-renovation.png";
+import bathroomRemodelingImage from "@/assets/bathroom-remodeling.png";
 import landClearingImage from "@/assets/land-clearing.jpg";
-import crushingImage from "@/assets/crushing.jpg";
+import commercialBuildoutsImage from "@/assets/commercial-buildouts.png";
 
 const services = [
   {
     title: "Kitchen Renovations",
     description: "Transform your kitchen into a culinary masterpiece with custom cabinetry, luxury appliances, and designer finishes that reflect your personal style.",
-    image: siteDevelopmentImage,
+    image: kitchenRenovationImage,
     features: ["Custom Cabinetry", "Premium Countertops", "Designer Lighting", "High-End Appliances"]
   },
   {
     title: "Bathroom Remodeling",
     description: "Create spa-like retreats with precision tile work, modern fixtures, and premium materials that combine luxury with functionality.",
-    image: demolitionImage,
+    image: bathroomRemodelingImage,
     features: ["Luxury Fixtures", "Custom Tilework", "Heated Floors", "Smart Technology"]
   },
   {
@@ -27,7 +27,7 @@ const services = [
   {
     title: "Commercial Build-Outs",
     description: "Professional restaurant, office, and retail spaces designed and built to enhance your business success and customer experience.",
-    image: crushingImage,
+    image: commercialBuildoutsImage,
     features: ["Restaurant Design", "Office Spaces", "Retail Build-Outs", "ADA Compliance"]
   }
 ];
