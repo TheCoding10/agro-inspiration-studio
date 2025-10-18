@@ -1,37 +1,47 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import projectsCollageImg from "@/assets/projects-collage.png";
-import shedProjectImg from "@/assets/shed-project.png";
-import houseStairsImg from "@/assets/house-stairs.png";
-import entranceStairsImg from "@/assets/entrance-stairs.png";
-import deckConstructionImg from "@/assets/deck-construction.png";
+import deckBefore from "@/assets/deck-before.png";
+import deckAfter from "@/assets/deck-after.png";
+import entranceBefore from "@/assets/entrance-before.png";
+import entranceAfter from "@/assets/entrance-after.png";
+import shedBefore from "@/assets/shed-before.png";
+import shedAfter from "@/assets/shed-after.png";
+import stairsBefore from "@/assets/stairs-before.png";
+import stairsAfter from "@/assets/stairs-after.png";
 
 const Gallery = () => {
   const galleryImages = [
     {
-      src: projectsCollageImg,
-      alt: "Construction and Excavation Projects",
-      caption: "Professional site development, demolition, and excavation services"
+      before: deckBefore,
+      after: deckAfter,
+      title: "Deck Construction",
+      beforeAlt: "Deck framing and foundation work in progress",
+      afterAlt: "Completed deck with premium composite decking",
+      description: "Complete deck transformation from foundation to finished composite surface"
     },
     {
-      src: deckConstructionImg,
-      alt: "Deck Construction Project",
-      caption: "Custom deck installation with premium materials"
+      before: entranceBefore,
+      after: entranceAfter,
+      title: "Entrance Renovation",
+      beforeAlt: "Old entrance door before renovation",
+      afterAlt: "New entrance with white railings and stairs",
+      description: "Modern entrance makeover with custom stairs and elegant white railings"
     },
     {
-      src: entranceStairsImg,
-      alt: "Entrance Stairs and Landing",
-      caption: "Beautiful white entrance stairs with professional craftsmanship"
+      before: shedBefore,
+      after: shedAfter,
+      title: "Custom Shed Build",
+      beforeAlt: "Shed foundation and framing setup",
+      afterAlt: "Completed custom shed with modern siding",
+      description: "Professional shed construction from ground up to finished structure"
     },
     {
-      src: shedProjectImg,
-      alt: "Custom Shed Construction",
-      caption: "High-quality shed installation with modern design"
-    },
-    {
-      src: houseStairsImg,
-      alt: "House Addition and Stairs",
-      caption: "Professional house addition with custom stairway construction"
+      before: stairsBefore,
+      after: stairsAfter,
+      title: "Exterior Stairs Upgrade",
+      beforeAlt: "Old deteriorated exterior stairs",
+      afterAlt: "New white exterior stairs and railings",
+      description: "Complete stairway renovation with durable materials and modern design"
     }
   ];
 
@@ -50,19 +60,38 @@ const Gallery = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {galleryImages.map((image, index) => (
-                <div key={index} className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                  <img 
-                    src={image.src} 
-                    alt={image.alt}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-colors duration-300">
-                    <div className="absolute bottom-0 left-0 right-0 p-4 text-white translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                      <p className="font-medium">{image.caption}</p>
+            <div className="space-y-16">
+              {galleryImages.map((project, index) => (
+                <div key={index} className="space-y-4">
+                  <h2 className="text-3xl font-bold text-primary mb-6">{project.title}</h2>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="space-y-3">
+                      <div className="relative overflow-hidden rounded-lg shadow-lg group">
+                        <img 
+                          src={project.before} 
+                          alt={project.beforeAlt}
+                          className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                        <div className="absolute top-4 left-4 bg-red-600 text-white px-4 py-2 rounded-lg font-semibold shadow-lg">
+                          Before
+                        </div>
+                      </div>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="relative overflow-hidden rounded-lg shadow-lg group">
+                        <img 
+                          src={project.after} 
+                          alt={project.afterAlt}
+                          className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                        <div className="absolute top-4 left-4 bg-green-600 text-white px-4 py-2 rounded-lg font-semibold shadow-lg">
+                          After
+                        </div>
+                      </div>
                     </div>
                   </div>
+                  <p className="text-lg text-muted-foreground mt-4 text-center">{project.description}</p>
+                  {index < galleryImages.length - 1 && <div className="border-t border-border mt-12"></div>}
                 </div>
               ))}
             </div>
