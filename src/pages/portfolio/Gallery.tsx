@@ -1,43 +1,37 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import siteDevelopmentImg from "@/assets/site-development.jpg";
-import demolitionImg from "@/assets/demolition.jpg";
-import landClearingImg from "@/assets/land-clearing.jpg";
-import crushingImg from "@/assets/crushing.jpg";
-import recyclingImg from "@/assets/recycling.jpg";
-import materialSalesImg from "@/assets/material-sales.jpg";
+import projectsCollageImg from "@/assets/projects-collage.png";
+import shedProjectImg from "@/assets/shed-project.png";
+import houseStairsImg from "@/assets/house-stairs.png";
+import entranceStairsImg from "@/assets/entrance-stairs.png";
+import deckConstructionImg from "@/assets/deck-construction.png";
 
 const Gallery = () => {
   const galleryImages = [
     {
-      src: siteDevelopmentImg,
-      alt: "Kitchen Renovation Project",
-      caption: "Modern kitchen remodel with custom cabinetry and granite countertops"
+      src: projectsCollageImg,
+      alt: "Construction and Excavation Projects",
+      caption: "Professional site development, demolition, and excavation services"
     },
     {
-      src: demolitionImg,
-      alt: "Bathroom Renovation",
-      caption: "Complete bathroom renovation with luxury fixtures and tiling"
+      src: deckConstructionImg,
+      alt: "Deck Construction Project",
+      caption: "Custom deck installation with premium materials"
     },
     {
-      src: landClearingImg,
-      alt: "Home Addition",
-      caption: "Beautiful home addition expanding living space"
+      src: entranceStairsImg,
+      alt: "Entrance Stairs and Landing",
+      caption: "Beautiful white entrance stairs with professional craftsmanship"
     },
     {
-      src: crushingImg,
-      alt: "Commercial Buildout",
-      caption: "Professional commercial space buildout and renovation"
+      src: shedProjectImg,
+      alt: "Custom Shed Construction",
+      caption: "High-quality shed installation with modern design"
     },
     {
-      src: recyclingImg,
-      alt: "Custom Cabinetry",
-      caption: "Handcrafted custom cabinetry installation"
-    },
-    {
-      src: materialSalesImg,
-      alt: "Flooring Installation",
-      caption: "Premium hardwood flooring installation"
+      src: houseStairsImg,
+      alt: "House Addition and Stairs",
+      caption: "Professional house addition with custom stairway construction"
     }
   ];
 
