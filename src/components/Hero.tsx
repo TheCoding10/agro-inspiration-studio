@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
         <div className="max-w-5xl mx-auto">
           {/* Logo */}
-          <div className="mb-12 animate-fade-in">
+          <div className="mb-6 animate-fade-in">
             <img 
               src={textLogo} 
               alt="Garcia & Peña General Contracting"
