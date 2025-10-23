@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-construction.jpg";
+import textLogo from "@/assets/garcia-pena-text-logo.png";
 
 const Hero = () => {
   return (
@@ -18,6 +19,15 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
         <div className="max-w-5xl mx-auto">
+          {/* Logo */}
+          <div className="mb-8 animate-fade-in">
+            <img 
+              src={textLogo} 
+              alt="Garcia & Peña General Contracting"
+              className="w-full max-w-3xl mx-auto drop-shadow-2xl opacity-95 hover:opacity-100 transition-opacity duration-300"
+            />
+          </div>
+          
           <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight text-white">
             Transforming Spaces.
             <br />
