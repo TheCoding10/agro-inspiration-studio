@@ -10,6 +10,7 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/component
 import { Link, useNavigate } from "react-router-dom";
 import { Menu, ChevronDown } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -25,9 +26,11 @@ const Header = () => {
         {/* Premium Logo */}
         <div className="flex items-center space-x-3">
           <Link to="/" className="group transition-all duration-300">
-            <div className="bg-gradient-to-r from-secondary to-accent text-primary font-playfair px-4 py-3 font-bold text-2xl hover:shadow-lg transition-all duration-300 transform hover:scale-105 rounded-md">
-              Garcia & Peña
-            </div>
+            <img 
+              src={logo} 
+              alt="Garcia & Peña General Contracting" 
+              className="h-16 w-auto transition-all duration-300 transform hover:scale-105 drop-shadow-lg hover:drop-shadow-2xl"
+            />
           </Link>
         </div>
 
