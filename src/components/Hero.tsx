@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
         <div className="max-w-5xl mx-auto">
           {/* Logo */}
-          <div className="mb-4 animate-fade-in">
+          <div className="mb-3 animate-fade-in">
             <img 
               src={textLogo} 
               alt="Garcia & Peña General Contracting"
@@ -28,13 +28,13 @@ const Hero = () => {
             />
           </div>
           
-          <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-white">
+          <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight text-white">
             Transforming Spaces.
             <br />
             <span className="text-secondary font-script text-5xl md:text-6xl lg:text-7xl">Exceeding Expectations.</span>
           </h1>
           
-          <p className="font-inter text-xl md:text-2xl mb-12 text-gray-200 leading-relaxed max-w-4xl mx-auto font-light">
+          <p className="font-inter text-xl md:text-2xl mb-6 text-gray-200 leading-relaxed max-w-4xl mx-auto font-light">
             Premium kitchen & bath renovations with uncompromising craftsmanship. 
             Where vision meets expertise to create extraordinary spaces that inspire daily living.
           </p>
