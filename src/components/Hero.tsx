@@ -20,11 +20,11 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
         <div className="max-w-5xl mx-auto">
           {/* Logo */}
-          <div className="mb-6 animate-fade-in">
+          <div className="mb-4 animate-fade-in">
             <img 
               src={textLogo} 
               alt="Garcia & Peña General Contracting"
-              className="w-full max-w-2xl mx-auto drop-shadow-2xl opacity-90 hover:opacity-100 transition-all duration-300"
+              className="w-full max-w-xl mx-auto drop-shadow-2xl opacity-95 hover:opacity-100 transition-all duration-300"
             />
           </div>
           
