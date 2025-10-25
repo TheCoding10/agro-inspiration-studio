@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import gpLogo from "@/assets/gp-logo.png";
+import gpLogo from "@/assets/gp-logo-full.png";
 
 const Mission = () => {
   return (
