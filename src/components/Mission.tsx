@@ -16,7 +16,7 @@ const Mission = () => {
             <img 
               src={gpLogo} 
               alt="Garcia & Peña General Contracting logo" 
-              className="h-32 mx-auto"
+              className="h-48 mx-auto"
             />
           </div>
 
